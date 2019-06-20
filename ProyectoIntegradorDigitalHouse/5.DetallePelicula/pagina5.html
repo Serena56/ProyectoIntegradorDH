@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="pagina3.css">
+    <link rel="stylesheet" href="pagina5.css">
+    <title></title>
+    <!-- Link a google fonts -->
+    <link href= "https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Header-->
+
+
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">
+                  <img src="../Images/movieClubb.png.jpeg" alt="" class="logo">
+                </li>
+            </ul>
+            <ul class="ul-home">
+
+              <li class="li-home">
+
+                <form class="form-inline">
+    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search..." aria-label="Search">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    </form>
+
+
+            </li>
+
+                <li class="li-home"><a class="header-item" href="">
+                  <a class="header-item" href="/Users/serena/Desktop/ProyectoIntegradorDigitalHouse/2.ListadoDeGeneros/pagina2.html">Genres</a>
+                </a>
+              </li>
+
+
+                <li class="li-home">
+                  <a id="#welcome" class="uk-button" href="#modal-full" uk-toggle> LOGIN </a>
+
+                  <div id="modal-full" class="uk-modal-full" uk-modal>
+                      <div class="uk-modal-dialog">
+                          <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                          <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                              <div class="uk-background-cover" style="background-image: url('../Images/logo.jpg');" uk-height-viewport></div>
+                              <div class="uk-padding-large">
+                                  <h1>LOGIN!</h1>
+                                  <form class="login-form" action="/Users/serena/Desktop/ProyectoIntegradorDigitalHouse/1.Home/HomeLoggedIn.html" method="post">
+                                  <p>
+                                    <input id="nombreUser" type="text" name="name" placeholder="NAME" required>
+                                  </p>
+                                  <p>
+                                    <input id="mail" type="email" name="mail" placeholder="MAIL" required>
+                                  </p>
+                                  <p class="gender">
+                                      <label for="male">
+                                        <input id="male" type="radio" name="answer" value="m" required>
+                                        MALE
+                                      </label>
+                                      <br>
+                                      <label for="female">
+                                        <input id="female" type="radio" name="answer" value="f" required>
+                                        FEMALE
+                                      </label>
+                                    </p>
+                                    <p>
+                                    <button id="submit" type="submit" name="button" value="Login">
+                                      SUBMIT
+                                    </button>
+                                    </p>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header-->
+
+    <div class="detalle">
+    </div>
+    <div class="trailer">
+      <iframe width="600" height="355" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="uk-h3">
+      <input class= "botonRecomendaciones" type="submit" name="" value="See recommendations">
+    </div>
+    <div class="recomendaciones"> </div>
+    <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 2000;pause-on-hover: true">
+
+        <ul class="uk-slideshow-items" id="popular"></ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" id="nextPrevious" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" id="nextPrevious" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+</div>
+
+<!-- Footer-->
+
+     <footer>
+         <ul class="ul-menu" type="none">
+             <li class="li-logo"> <a href="https://www.themoviedb.org/?language=es" </a>  <img src="../Images/logoTMDb.png" alt="" class="logoTMDb"> </li>
+             <li class="li-menu"> <a  href="https://www.instagram.com/sofimollon/?hl=es-la"</a>  Sofía Mollón </li>
+             <li class="li-menu"> <a  href="https://www.instagram.com/vickyduque_/?hl=es-la"</a>  Victoria Duque </li>
+             <li class="li-menu"> <a  href="https://www.instagram.com/its.notserena/?hl=es-la"</a> Serena Dominguez</li>
+
+         </ul>
+     </footer>
+
+<!-- Footer-->
+  </body>
+</html>
+<script type="text/javascript" src="pagina5.js"></script>
