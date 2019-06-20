@@ -7,7 +7,7 @@ window.onload=function () {
   }
 
 
-  // Extraemos api de genero de peliculas
+// FETH PARA PELÍCULAS POR GÉNERO
  fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=d6ff71a6bd2a94eaac5b986a9112d505&page=1")
   .then(function(respuesta) {
         return respuesta.json()
@@ -23,7 +23,7 @@ window.onload=function () {
     var id = generos[i].id
     var nombre = generos[i].name
 
-    document.querySelector("#generos").innerHTML += "<a class=uk-text-center href=/Users/serena/Desktop/ProyectoIntegradorDigitalHouse/3.PeliculasPorGenero/pagina3LoggedIn.html?idDeGenero=" + id + "&nombreDeGenero="+nombre+">" + nombre + "</a>"
+    document.querySelector("#generos").innerHTML += "<a class=uk-text-center href=../3.PeliculasPorGenero/pagina3LoggedIn.html?idDeGenero=" + id + "&nombreDeGenero="+nombre+">" + nombre + "</a>"
   }
 })
 

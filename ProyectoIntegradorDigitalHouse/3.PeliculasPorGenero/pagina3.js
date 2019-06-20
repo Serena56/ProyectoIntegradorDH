@@ -6,6 +6,7 @@ window.onload =function(){
   console.log(nombreDeGenero);
  document.querySelector("p.nombreG").innerHTML += "<p> " + nombreDeGenero + " </p>"
 
+// FETCH PARA LAS PELÍCULAS POR GÉNERO
   fetch("https://api.themoviedb.org/3/discover/movie?api_key=d6ff71a6bd2a94eaac5b986a9112d505&sort_by=popularity.desc&include_adult=true&include_video=true&page=1&with_genres="+idDeGenero)
     .then(function(respuesta) {
       return respuesta.json()
@@ -16,12 +17,13 @@ window.onload =function(){
       var arrayPeliculasPorGenero= informacion.results
       console.log(arrayPeliculasPorGenero);
 
+// UN FOR POR CADA GÉNERO
       for (var i = 0; i < arrayPeliculasPorGenero.length; i++) {
 
         var id = arrayPeliculasPorGenero[i].id
         var title = arrayPeliculasPorGenero[i].title
         var poster = arrayPeliculasPorGenero[i].poster_path
-        document.querySelector("ul#genero").innerHTML += "<li> <a href='/Users/serena/Desktop/ProyectoIntegradorDigitalHouse/5.DetallePelicula/pagina5.html?idPelicula="+ id+ "'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </a> </li>"
+        document.querySelector("ul#genero").innerHTML += "<li> <a href='../5.DetallePelicula/pagina5.html?idPelicula="+ id+ "'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </a> </li>"
 
 
 

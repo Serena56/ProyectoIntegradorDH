@@ -8,7 +8,7 @@ if (sessionStorage.getItem("name")) {
 
 }
 
-
+// FETCH DE PELÍCULAS POPULARES
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=d6ff71a6bd2a94eaac5b986a9112d505&page=1")
   .then(function(respuesta) {
     return respuesta.json()
@@ -24,7 +24,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=d6ff71a6bd2a94eaac5b98
       var title = arrayPeliculas[i].title
       var poster = arrayPeliculas[i].poster_path
 
-      document.querySelector("ul#popular").innerHTML += "<li> <a href='/Users/serena/Desktop/ProyectoIntegradorDH/ProyectoIntegradorDigitalHouse/5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </li>"
+      document.querySelector("ul#popular").innerHTML += "<li> <a href='../5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </li>"
 
     }
 
@@ -33,7 +33,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=d6ff71a6bd2a94eaac5b98
     console.log("Error: " + error);
   })
 
-    // Extraemos api de peliculas con mayor puntaje
+// FETCH DE PELÍCULAS CON MAYOR PUNTAJE
 
   fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d6ff71a6bd2a94eaac5b986a9112d505&page=1")
     .then(function(respuesta) {
@@ -50,7 +50,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=d6ff71a6bd2a94eaac5b98
         var title = arrayPeliculas[i].title
         var poster = arrayPeliculas[i].poster_path
 
-        document.querySelector("ul#top").innerHTML += "<li> <a href='/Users/serena/Desktop/ProyectoIntegradorDH/ProyectoIntegradorDigitalHouse/5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </li>"
+        document.querySelector("ul#top").innerHTML += "<li> <a href='../5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </li>"
 
 
       }
@@ -60,7 +60,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=d6ff71a6bd2a94eaac5b98
       console.log("Error: " + error);
     })
 
-    // Extraemos api de peliculas a estrenar
+// FETCH DE PELÍCULAS A ESTRENAR
 
   fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=d6ff71a6bd2a94eaac5b986a9112d505&page=1")
     .then(function(respuesta) {
@@ -77,7 +77,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=d6ff71a6bd2a94eaac5b98
         var title = arrayPeliculas[i].title
         var poster = arrayPeliculas[i].poster_path
 // console.log("https://image.tmdb.org/t/p/w500" + poster);
-        document.querySelector("ul#upcoming").innerHTML += "<li> <a href='/Users/serena/Desktop/ProyectoIntegradorDH/ProyectoIntegradorDigitalHouse/5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </li>"
+        document.querySelector("ul#upcoming").innerHTML += "<li> <a href='../5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </li>"
 
       }
 

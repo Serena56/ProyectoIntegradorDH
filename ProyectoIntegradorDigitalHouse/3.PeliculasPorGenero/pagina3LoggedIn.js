@@ -28,7 +28,7 @@ window.onload =function(){
         var id = arrayPeliculasPorGenero[i].id
         var title = arrayPeliculasPorGenero[i].title
         var poster = arrayPeliculasPorGenero[i].poster_path
-        document.querySelector("ul#genero").innerHTML += "<li> <a href='/Users/serena/Desktop/ProyectoIntegradorDigitalHouse/5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+ id+ "'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </a> </li>"
+        document.querySelector("ul#genero").innerHTML += "<li> <a href='../5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+ id+ "'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </a> </li>"
 
 
 
