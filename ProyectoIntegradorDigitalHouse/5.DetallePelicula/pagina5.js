@@ -68,7 +68,7 @@ var idPelicula = new URLSearchParams (window.location.search).get ("idPelicula")
          for (var i = 0; i < arrayDePeliculas.length; i++) {
             var id = arrayDePeliculas[i].id
             var poster = arrayDePeliculas[i].poster_path
-            document.querySelector("ul#popular").innerHTML += "<p><a href='pagina5.html?idPelicula="+id+"'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </a></p>"
+            document.querySelector("ul#popular").innerHTML += "<p><a href='pagina5.html?idPelicula="+id+"'> <img id='poster' class=uk-align-center src=https://image.tmdb.org/t/p/w500" + poster + " 'uk-cover'> </a></p>"
       }
     })
 
