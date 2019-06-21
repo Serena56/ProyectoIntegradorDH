@@ -313,3 +313,19 @@ font-size: 20px;
 footer a:hover {
   color:#333;
 }
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+
+img.uk-align-center{
+  margin-left: 0;
+  width: 200px;
+  height: 300px;
+}
+
+
+
+
+}

@@ -1,5 +1,4 @@
 * {
-
   box-sizing: border-box;
 }
 
@@ -209,6 +208,50 @@ form.form-inline {
 margin-top: 9px;
 }
 
+/* MEDIA QUERIES */
 
+@media only screen and (max-width: 768px){
+
+/* IMAGENES DEL CARROUSEL */
+  img.uk-align-center {
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    width: 50%;
+    height: 100%;
+  }
+
+/* GENEROS */
+a.header-item{
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+}
+/* LOGIN */
+a.uk-button{
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+}
+
+/* BUSCADOR */
+input#buscador{
+  width: 10%;
+  height: 40%;
+}
+
+img.logoTMDb{
+  width: 60%;
+  align-items: center;
+  margin-left: 0%;
+}
+
+footer ul li.li-menu{
+  width: 35%;
+}
+
+footer a{
+  font-size: 17px;
+}
 
 }
