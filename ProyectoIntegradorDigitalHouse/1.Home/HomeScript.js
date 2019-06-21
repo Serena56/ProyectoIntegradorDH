@@ -1,11 +1,5 @@
 window.onload = function() {
 
-// if (sessionStorage.getItem("name")) {
-//   var welcomeLoggedIn =  document.querySelector("#welcome");
-//   console.log(welcomeLoggedIn);
-//   welcomeLoggedIn.innerHTML = "Welcome!";
-//
-// }
 
 // FETCH DE PELÍCULAS POPULARES
 

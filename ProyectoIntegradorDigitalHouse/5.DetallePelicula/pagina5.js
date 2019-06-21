@@ -30,7 +30,15 @@ var idPelicula = new URLSearchParams (window.location.search).get ("idPelicula")
         var poster = "https://image.tmdb.org/t/p/w500" + detallesPeliculas.poster_path
 
 
-        document.querySelector(".detalle").innerHTML+= "<p class='titulo'>"+ titulo + "</p>" + "<p class='genero'>"+ genero + "</p>" + "<p class='idioma'>"+ "-Language: " +idioma + "</p>" + "<p class='estreno'>"+"-"+ estreno + "</p>" + "<p class='sinopsis'>"+ sinopsis + "</p>"  + "<img class=uk-align-center src=" + poster + " 'uk-cover'>"
+        document.querySelector(".detalle").innerHTML+= "<p class='titulo'>"+ titulo + "</p>" + "<p class='genero'>"+ genero + "</p>" + "<p class='idioma'>"+ "-Language: " +idioma + "</p>" + "<p class='estreno'>"+"-"+ estreno + "</p>" +
+
+
+
+        
+
+
+
+        + "<p class='sinopsis'>"+ sinopsis + "</p>"  + "<img class=uk-align-center src=" + poster + " 'uk-cover'>"
 
     })
     .catch(function(error) {

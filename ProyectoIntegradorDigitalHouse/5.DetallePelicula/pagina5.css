@@ -314,6 +314,30 @@ footer a:hover {
   color:#333;
 }
 
+#star {
+width: 100px;
+height: 100px;
+}
+
+#star:hover {
+color:#FFD740;
+}
+
+button.estrella {
+  background-color: #ECEFEB;
+  border: solid;
+  border-color: #FFD740;
+  border-radius: 50px;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 1250px;
+  width: 250px;
+}
 
 /* MEDIA QUERIES */
 

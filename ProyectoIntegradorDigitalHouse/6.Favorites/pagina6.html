@@ -2,19 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="pagina5.css">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="pagina6.css">
     <!-- Link a google fonts -->
-    <link href= "https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
 
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
-
   </head>
   <body>
 
@@ -52,54 +50,49 @@
                         </a>
                       </li>
 
-                  <li class="li-home">
-                    <a id="welcome" class="uk-button" href="#modal-full" uk-toggle> LOGIN </a>
-                  </li>
 
+              <li class="li-home">
+                <a id="welcome" class="uk-button" href="#modal-full" uk-toggle> LOGIN </a>
+              </li>
             </ul>
         </nav>
     </header>
 
     <!-- Header-->
-    <div class="starstar">
-      <button class='estrella' id='star'> <span uk-icon="star"></span> </button>
-    </div>
 
-    <div class="detalle">
+    <h1 id="favorites">FAVORITES</h1>
 
-    </div>
+  <section>
+  <ul>
 
-    <div class="trailer">
-      <iframe width="600" height="355" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+  </ul>
+</section>
 
-
-    <div class="uk-h3">
-      <input class= "botonRecomendaciones" type="submit" name="" value="See recommendations">
-    </div>
-    <div class="recomendaciones"> </div>
+<!-- CARROUSEL DE LAS PELÍCULAS FAVORITAS-->
     <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 2000;pause-on-hover: true">
 
-        <ul class="uk-slideshow-items" id="popular"></ul>
+        <ul class="uk-slideshow-items" id="favoritas"></ul>
 
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" id="nextPrevious" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" id="nextPrevious" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-</div>
 
-<!-- Footer-->
+    </div>
 
-     <footer>
-         <ul class="ul-menu" type="none">
-             <li class="li-logo"> <a href="https://www.themoviedb.org/?language=es" </a>  <img src="../Images/logoTMDb.png" alt="" class="logoTMDb"> </li>
-             <li class="li-menu"> <a  href="https://www.instagram.com/sofimollon/?hl=es-la"</a>  Sofía Mollón </li>
-             <li class="li-menu"> <a  href="https://www.instagram.com/vickyduque_/?hl=es-la"</a>  Victoria Duque </li>
-             <li class="li-menu"> <a  href="https://ar.linkedin.com/in/serena-mar%C3%ADa-dominguez-a48368146"</a> Serena Dominguez</li>
+    <!-- Footer-->
 
-         </ul>
-     </footer>
+         <footer>
+             <ul class="ul-menu" type="none">
+                 <li class="li-logo"> <a href="https://www.themoviedb.org/?language=es" </a>  <img src="../Images/logoTMDb.png" alt="" class="logoTMDb"> </li>
+                 <li class="li-menu"> <a  href="https://www.instagram.com/sofimollon/?hl=es-la"</a>  Sofía Mollón </li>
+                 <li class="li-menu"> <a  href="https://www.instagram.com/vickyduque_/?hl=es-la"</a>  Victoria Duque </li>
+                 <li class="li-menu"> <a  href="https://ar.linkedin.com/in/serena-mar%C3%ADa-dominguez-a48368146"</a> Serena Dominguez</li>
 
-<!-- Footer-->
+             </ul>
+         </footer>
+
+   <!-- Footer-->
+
+
   </body>
 </html>
-
-<script type="text/javascript" src="pagina5LoggedIn.js"></script>
+<script type="text/javascript" src="pagina6.js"> </script>
