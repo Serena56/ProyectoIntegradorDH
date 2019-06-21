@@ -120,13 +120,13 @@ img#poster.uk-align-center {
 /* Recommendaciones */
 
 /* TRAILER */
-div.trailer{
+/* div.trailer{
   position: relative;
-}
+} */
 iframe{
   position: absolute;
   left: 700px;
-  top: -450px;
+  top: 550px;
 }
 /* TRAILER */
 
@@ -318,14 +318,6 @@ footer a:hover {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px){
-
-img.uk-align-center{
-  margin-left: 0;
-  width: 200px;
-  height: 300px;
-}
-
-
 
 
 }

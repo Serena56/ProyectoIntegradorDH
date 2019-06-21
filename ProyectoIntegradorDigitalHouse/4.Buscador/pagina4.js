@@ -22,10 +22,10 @@ window.addEventListener("load", function(){
       // PARTE FIJA DE LA URL DE LA IMAGEN
       var urlImg = "https://image.tmdb.org/t/p/original"
       // RECORRO EL ARRAY DE PELICULAS
-      
+
       //en caso de que no se encuentre ningun resultado:
       if(arrayDePeliculas.length == 0){
-      document.querySelector('section ul').innerHTML="<h2> There are no results </h2>"
+      document.querySelector('section ul').innerHTML="<h2 class='resultadoError'> There are no results available. Please try again.</h2>"
       }
       for (var i = 0; i < arrayDePeliculas.length; i++) {
           li = "<li>"

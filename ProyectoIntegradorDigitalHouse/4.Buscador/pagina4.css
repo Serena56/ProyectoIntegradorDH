@@ -147,6 +147,28 @@ form.login-form p {
 
 }
 
+section ul{
+  margin-bottom: 28%;
+  margin-right: 0%;
+}
+
+.resultadoError {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  border-style: dotted;
+  border-width: thick;
+  border-color: #FFD740;
+  width: 777px;
+}
+
 img.uk-align-center {
   border-radius: 10px;
   border-color: black;
@@ -231,5 +253,14 @@ height: 150px;
 
 
 form.form-inline {
-margin-top: 9px;
+margin-top: -6px;
+}
+
+form.form-inline input{
+margin-top: -6px;
+font-size: 14px;
+font-family: 'Anton', sans-serif;
+padding: 5px;
+border-radius: 4px;
+margin-right: 10px;
 }
