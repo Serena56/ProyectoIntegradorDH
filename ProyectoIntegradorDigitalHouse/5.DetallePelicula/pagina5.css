@@ -368,5 +368,36 @@ button.estrella {
 
 @media only screen and (max-width: 768px){
 
+iframe{
+  width: 400px;
+  height: 250px;
+  position: static;
+  margin: 60px;
+}
+input.botonRecomendaciones {
+  font-size: 15px;
+}
+
+img.logoTMDb{
+  width: 45px;
+}
+footer ul li.li-menu {
+  float: right;
+  padding: 15px;
+  width: 120px;
+  position: relative;
+  text-align: center;
+  margin-left: 5px;
+  top: -10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 10px;
+}
+
+img#poster.uk-align-center {
+  margin: 0px 10px 30px 173px;
+  width: 250px;
+  height: 290px;
+}
+
 
 }

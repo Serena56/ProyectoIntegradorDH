@@ -6,7 +6,7 @@ window.onload= function (){
     welcomeLoggedIn.innerHTML = "Welcome " + elNombre + "!";
   }
 
-
+var arrayDePelisFavoritas = []
 var imgPath = "https://image.tmdb.org/t/p/original"
 var idPelicula = new URLSearchParams (window.location.search).get("idPelicula")
 
@@ -113,7 +113,7 @@ var idPelicula = new URLSearchParams (window.location.search).get("idPelicula")
     var btnStar = document.querySelector(".estrella");
     console.log(btnStar);
     btnStar.onclick = function() {
-      alert("me click")
+      alert("You just added this movie to your favorite list!")
       if (arrayDePelisFavoritas.indexOf(idPelicula) === -1) {
         arrayDePelisFavoritas.push(idPelicula)
         localStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
