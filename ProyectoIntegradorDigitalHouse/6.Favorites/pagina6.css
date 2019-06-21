@@ -64,11 +64,17 @@ nav ul li {
 }
 
 nav ul li.logo {
-  background-image: url(../Images/logo.jpg);
+  background-image: url(../Images/../Images/FunctionMovie.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 150;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.logo{
+  width: 15%
 }
 
 a.header-item {
@@ -135,9 +141,6 @@ form.login-form p {
 
 }
 
-.logo{
-  width: 10%
-}
 
 form.form-inline {
 margin-top: 9px;

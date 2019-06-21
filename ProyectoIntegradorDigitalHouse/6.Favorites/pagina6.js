@@ -23,7 +23,7 @@ if (arrayDePeliculasFavoritas.length>0) {
        })
         .then(function(pelicula) {
         for (var i = 0; i < arrayDePeliculasFavoritas.length; i++) {
-         document.querySelector("ul#favoritas").innerHTML += "<li> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + pelicula.poster_path + " 'uk-cover'> </a> </li>"
+         document.querySelector("ul#favoritas").innerHTML += "<li> <a href='../5.DetallePelicula/pagina5LoggedIn.html?idPelicula="+ pelicula.id + "'> <img class=uk-align-center src=https://image.tmdb.org/t/p/w500" + pelicula.poster_path + " 'uk-cover'> </a> </li>"
        }
 
         })

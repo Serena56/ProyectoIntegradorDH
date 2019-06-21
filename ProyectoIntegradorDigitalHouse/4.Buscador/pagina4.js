@@ -26,11 +26,13 @@ window.addEventListener("load", function(){
      //en caso de que no se encuentre ningun resultado:
      if(arrayDePeliculas.length == 0){
      document.querySelector('section ul').innerHTML="<h2 class='resultadoError'> There are no results available. Please try again.</h2>"
-     }
+   }
      for (var i = 0; i < arrayDePeliculas.length; i++) {
+
+
          li = "<li>"
          li +="<a href='../5.DetallePelicula/pagina5.html?idPelicula="+arrayDePeliculas[i].id+"'>"
-         li +=   "<img src='"+urlImg + arrayDePeliculas[i].poster_path+"' style='width:300px;'>"
+         li +=   "<img id='posters' src='"+urlImg + arrayDePeliculas[i].poster_path+"' style='width:300px;'>"
          li +="</a>"
          li += "</li>"
 
