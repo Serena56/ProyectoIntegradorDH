@@ -147,6 +147,7 @@ form.login-form p {
 
 }
 
+<<<<<<< Updated upstream
 section ul{
   margin-bottom: 28%;
   margin-right: 0%;
@@ -169,6 +170,8 @@ section ul{
   width: 777px;
 }
 
+=======
+>>>>>>> Stashed changes
 img.uk-align-center {
   border-radius: 10px;
   border-color: black;
@@ -253,6 +256,7 @@ height: 150px;
 
 
 form.form-inline {
+<<<<<<< Updated upstream
 margin-top: -6px;
 }
 
@@ -263,4 +267,7 @@ font-family: 'Anton', sans-serif;
 padding: 5px;
 border-radius: 4px;
 margin-right: 10px;
+=======
+margin-top: 9px;
+>>>>>>> Stashed changes
 }
